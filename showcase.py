@@ -1,6 +1,7 @@
 import sys
 import time
 import gym
+import panda_gym
 import custom_env
 
 argv_len = len(sys.argv)
@@ -17,9 +18,9 @@ elif argv_len > 2:
 
 env_id = sys.argv[1]
 
-if env_id != "PandaPickAndPlaceAndThrow-v1" and env_id != "PandaPickAndPlaceAndMove-v1":
+if env_id != "PandaPickAndPlaceAndMove-v1":
     print("Wrong environment id!")
-    print("Please use PandaPickAndPlaceAndThrow-v1 or PandaPickAndPlaceAndMove-v1")
+    print("PandaPickAndPlaceAndMove-v1")
     exit(-1)
 
 
