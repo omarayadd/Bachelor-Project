@@ -94,8 +94,7 @@ python ./evaluate.py PandaPickAndPlaceAndMove-v1 TQC trained/PandaPickAndPlaceAn
 
 This custom environment was used for `PandaPickAndPlaceAndMove-v1`. 
 
-![PandaPickAndPlaceAndThrow-v1](https://user-images.githubusercontent.com/7521492/221948141-d4e49583-81b7-4336-ac62-279728e0e46f.gif)
-
+![PandaPickAndPlaceAndMove-v1](showcase_exp3_AdobeExpress.gif)
 
 
 ### Trained model 
