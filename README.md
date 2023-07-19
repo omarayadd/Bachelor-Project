@@ -106,11 +106,11 @@ Using_TD3_AdobeExpress.gif )
 
 Mean reward: 
                              
-<img src="https://user-images.githubusercontent.com/92969814/221976736-8bb401b0-1bcf-413b-9210-22be2e66df8e.png" data-canonical-src="https://user-images.githubusercontent.com/92969814/221976736-8bb401b0-1bcf-413b-9210-22be2e66df8e.png" width="50%" />
+<img src="exp3 TQC rew.PNG" width="50%" />
 
 Success rate: 
 
-<img src="https://user-images.githubusercontent.com/92969814/221976917-7b4a0e63-bd2b-4e53-ad4a-4aef5b7cab0d.png" data-canonical-src="https://user-images.githubusercontent.com/92969814/221976917-7b4a0e63-bd2b-4e53-ad4a-4aef5b7cab0d.png" width="50%" />
+<img src="exp3 TQC res.PNG" width="50%" />
 
 
 
