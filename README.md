@@ -1,14 +1,13 @@
 # Custom Panda Gym Environments
 
-Students project at the University of Applied Sciences Dresden (HTW Dresden). The goal
-was to customize an existing reinforcement learning problem and to successfully train a model.
-The base for this project was the panda-gym repository (https://github.com/qgallouedec/panda-gym).
+Student bachelor project at the University of Applied Sciences Dresden (HTW Dresden). The goal
+was to Adaptable pick and place using RL for the moving source moving target problem.
+The base for this project was the panda-gym repository (https://github.com/balooox/CustomPandaPickAndPlaceEnv.git).
 
-Models were successfully trained with the TQC algorithm and partly also with the SAC algorithm. We used 
+Models were successfully trained with the TQC, TD3 algorithm and also with the SAC algorithm. We used 
 stable-baselines3 and sb3-contrib to integrate the algorithms. 
 
-We have implemented two custom gym environments:
-- `PandaPickAndPlaceAndThrow-v1`
+We have a custom gym environment:
 - `PandaPickAndPlaceAndMove-v1`
 
 This repository includes trained models for the environments, available as zip files. 
@@ -35,7 +34,7 @@ Run conda `conda create --name <env> --file <this file>`
 
 ### Step by step installation guide
 
-1. git clone https://github.com/balooox/CustomPandaPickAndPlaceEnv.git
+1. git clone https://github.com/omarayadd/Bachelor-Project.git
 2. cd ./CustomPandaPickAndPlaceEnv
 3. use Anaconda:
     1. Under Windows: open the anaconda prompt (anaconda3)
@@ -46,23 +45,23 @@ Run conda `conda create --name <env> --file <this file>`
 ## Usage
 
 ### showcase.py 
-To get an overview over the custom environments, you can run the script showcase.py !
+To get an overview over the custom environment, you can run the script showcase.py !
 
 ```bash
 python ./showcase.py env
 # For example
-python ./showcase.py PandaPickAndPlaceAndThrow-v1
+python ./showcase.py PandaPickAndPlaceAndMove-v1
 ```
 
 ### train.py
-You can train a model with the train.py script. Available algorithms are TQC and 
+You can train a model with the train.py script. Available algorithms are TQC, TD3 and 
 SAC ( but you can extend the code and include different algorithms available
 through stable-baselines3 and sb3_contrib, like PPO etc... ).
 
 ```bash
 python ./train env algo amount
 # For example
-python ./train.py PandaPickAndPlaceAndThrow-v1 TQC 1000000
+python ./train.py PandaPickAndPlaceAndMove-v1 TQC 1000000
 ```
 
 During training (or afterwards) you can visualize the training process by
@@ -78,7 +77,7 @@ You can run enjoy.py two see a visualized result of the training.
 ```bash
 python ./enjoy env algo file
 # For example
-python ./enjoy PandaPickAndPlaceAndThrow-v1 TQC ./benchmark/PandaPickAndPlaceAndThrow-v1/TQC/monitor.zip 
+python ./enjoy.py PandaPickAndPlaceAndMove-v1 TQC trained/PandaPickAndPlaceAndMove-v1/TQC/PandaPickAndPlaceAndMove-v1TQC20230628-1301.zip 
 ```
 
 ### evaluate.py
@@ -88,12 +87,12 @@ success rate and the mean reward for each episode. To truly evaluate a model use
 ```bash
 python  ./evaluate env algo file
 # For example
-python ./evaluate PandaPickAndPlaceAndThrow-v1 TQC ./benchmark/PandaPickAndPlaceAndThrow-v1/TQC/monitor.zip
+python ./evaluate.py PandaPickAndPlaceAndMove-v1 TQC trained/PandaPickAndPlaceAndMove-v1/TQC/PandaPickAndPlaceAndMove-v1TQC20230628-1301.zip
 ```
 
 ## Environments
 
-This custom environment was used for `PandaPickAndPlaceAndMove-v1` and `PandaPickAndPlaceAndThrow-v1`. 
+This custom environment was used for `PandaPickAndPlaceAndMove-v1`. 
 
 ![PandaPickAndPlaceAndThrow-v1](https://user-images.githubusercontent.com/7521492/221948141-d4e49583-81b7-4336-ac62-279728e0e46f.gif)
 
@@ -137,7 +136,6 @@ Success rate:
 ### Site note
 
 It takes approximately 1 million episodes, before an agent reach 
-convergence. The models were trained on a server with two
-Nvidia Quadro 8000. Not every experiment reached convergence.
+convergence. Not every experiment reached convergence.
 
 
