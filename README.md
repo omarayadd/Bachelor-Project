@@ -99,9 +99,10 @@ This custom environment was used for `PandaPickAndPlaceAndMove-v1`.
 
 ### Trained model 
 
-#### Trained env for `PandaPickAndPlaceAndThrow-v1`:          
+#### Trained env for `PandaPickAndPlaceAndMove-v1`:          
 
-![PandaPickAndPlaceAndThrow-v1-trained](https://user-images.githubusercontent.com/7521492/221982843-faf17026-16b2-43c0-a2f0-6275f077b3d7.gif)
+![PandaPickAndPlaceAndMove-v1-trained](
+Using_TD3_AdobeExpress.gif )
 
 Mean reward: 
                              
@@ -112,21 +113,6 @@ Success rate:
 <img src="https://user-images.githubusercontent.com/92969814/221976917-7b4a0e63-bd2b-4e53-ad4a-4aef5b7cab0d.png" data-canonical-src="https://user-images.githubusercontent.com/92969814/221976917-7b4a0e63-bd2b-4e53-ad4a-4aef5b7cab0d.png" width="50%" />
 
 
-
-
-
-#### Trained env for `PandaPickAndPlaceAndMove-v1`:
-
-![PandaPickAndPlaceAndMove-v1-trained](https://user-images.githubusercontent.com/7521492/221985066-4f9ba9d9-ab32-4818-a1d1-13ddc745766f.gif)
-
-
-Mean reward:
-
-<img src="https://user-images.githubusercontent.com/92969814/221974043-54f852b3-4c67-42e1-a42b-86595c7b630a.png" data-canonical-src="https://user-images.githubusercontent.com/92969814/221974043-54f852b3-4c67-42e1-a42b-86595c7b630a.png" width="50%" />
-
-Success rate:
-
-<img src="https://user-images.githubusercontent.com/92969814/221976224-1755d64f-a4a1-47b3-b8ef-b35d676b099b.png" data-canonical-src="https://user-images.githubusercontent.com/92969814/221976224-1755d64f-a4a1-47b3-b8ef-b35d676b099b.png" width="50%" />
 
 
 
