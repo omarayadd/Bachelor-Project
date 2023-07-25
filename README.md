@@ -35,7 +35,7 @@ Run conda `conda create --name <env> --file <this file>`
 ### Step by step installation guide
 
 1. git clone https://github.com/omarayadd/Bachelor-Project.git
-2. cd ./CustomPandaPickAndPlaceEnv
+2. cd ./Bachelor-Project
 3. use Anaconda:
     1. Under Windows: open the anaconda prompt (anaconda3)
     2. Under Linux: make sure anaconda is integrated into the cli
